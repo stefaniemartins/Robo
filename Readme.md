@@ -1,5 +1,7 @@
 # Robô de exploração com controle remoto
 
+![Robô](https://media3.giphy.com/media/PEqzN6Mmz1Yje/giphy.gif)
+
 # Projeto inicial
 
 - Crie uma classe para representar um robô de exploração espacial
