@@ -40,13 +40,13 @@ public class Robô {
      * Método que obtém a dimensão da área a ser explorada (a área será sempre quadrada).
      * @return a valor da área tanto para X quanto para Y.
      */
-    public int getDimensao_area() { return dimensao_area; }
+    public int getDimensao_area() {return dimensao_area;}
 
     /**
      * Método que obtém qual a posição em relação a X o robô se encontra.
      * @return a posição que o robô se encontra na horizontal (a posição irá variar entre 0 e a dimensão estabelecida).
      */
-    public int getPosicao_X() { return posicao_X; }
+    public int getPosicao_X() {return posicao_X;}
 
     /**
      * Método que obtém qual a posição em relação a Y o robô se encontra.
@@ -103,16 +103,30 @@ public class Robô {
 
         else if (comando == 'M') {
             char frente = getFrente_robo();
-            System.out.println(frente);
 
-            if (frente == 'N') {posicao_Y++;
+            if (frente == 'N') {
+                if (getPosicao_Y() < (dimensao_area - 1)) {
+                    posicao_Y++;
+                }
             }
 
-            else if (frente == 'L') {posicao_X++;}
+            else if (frente == 'L') {
+                if (getPosicao_X() < (dimensao_area - 1 )) {
+                    posicao_X++;
+                }
+            }
 
-            else if (frente == 'S') {posicao_Y--;}
+            else if (frente == 'S') {
+                if (getPosicao_Y() > 0) {
+                    posicao_Y--;
+                }
+            }
 
-            else if (frente == 'O') {posicao_X--;}
+            else if (frente == 'O') {
+                if (getPosicao_X() > 0) {
+                    posicao_X--;
+                }
+            }
         }
     }
 

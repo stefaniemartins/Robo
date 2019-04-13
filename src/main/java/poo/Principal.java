@@ -8,7 +8,7 @@ public class Principal {
 
         Scanner teclado = new Scanner(System.in);
 
-        String comandos = teclado.next();
+        String comandos = teclado.next().toUpperCase(); // toUpperCase para deixar todos os comandos em padrão maiúsculo.
 
         robô.converterComandos(comandos);
 
