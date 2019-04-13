@@ -37,12 +37,6 @@ public class Robô {
     }
 
     /**
-     * Método que obtém a dimensão da área a ser explorada (a área será sempre quadrada).
-     * @return a valor da área tanto para X quanto para Y.
-     */
-    public int getDimensao_area() {return dimensao_area;}
-
-    /**
      * Método que obtém qual a posição em relação a X o robô se encontra.
      * @return a posição que o robô se encontra na horizontal (a posição irá variar entre 0 e a dimensão estabelecida).
      */
